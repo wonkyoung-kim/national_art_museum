@@ -1,0 +1,36 @@
+.btn-more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7px;
+  padding: 22px 35px;
+  border-radius: 45px;
+  background: #fff;
+  width: 11px;
+  transition: width 0.7s cubic-bezier(.455,.03,.515,.955);
+  span {
+    overflow: hidden;
+    opacity: 0;
+    margin-right: 0;
+    transform: translateX(-20px);
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    transition: 0.7s cubic-bezier(.455,.03,.515,.955);
+  }
+  svg {
+    width: 11px; height: 7px;
+    flex-shrink: 0;
+  }
+  &:hover {
+    width: 140px;
+    span {
+      opacity: 1;
+      margin-right: 10px;
+      transform: translateX(0);
+      transition: 1s cubic-bezier(.455,.03,.515,.955) 0.4s;
+    }
+  }
+}
