@@ -53,48 +53,12 @@
           transition: 2s cubic-bezier(0.57,-0.03, 0.25, 1);
         }
       }
-      .title-box {
-        display: flex;
-        overflow: hidden;
-        z-index: 1;
-        white-space: nowrap;
-        .title {
-          display: block;
-          transform: translateY(102%);
-          transition: transform 1s;
-        }
-      }
       .btn-more {display: none;}
       &-active {
         .img-box {
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
           img {
             transform: scale(1);
-          }
-        }
-        .title-box {
-          position: absolute;
-          left: 50%; top: 50%;
-          transform: translate(-50%, -50%);
-          .title {
-            font: {
-              size: 126px;
-              weight: bold;
-            }
-            transform: translateY(0%);
-            &:nth-child(1) {transition-delay: 0.1s}
-            &:nth-child(2) {transition-delay: 0.2s}
-            &:nth-child(3) {transition-delay: 0.3s}
-            &:nth-child(4) {transition-delay: 0.4s}
-            &:nth-child(5) {transition-delay: 0.5s}
-            &:nth-child(6) {transition-delay: 0.6s}
-            &:nth-child(7) {transition-delay: 0.7s}
-            &:nth-child(8) {transition-delay: 0.8s}
-            &:nth-child(9) {transition-delay: 0.9s}
-            &:nth-child(10) {transition-delay: 1s}
-            &:nth-child(11) {transition-delay: 1.1s}
-            &:nth-child(12) {transition-delay: 1.2s}
-            &:nth-child(13) {transition-delay: 1.3s}
           }
         }
       }
@@ -289,8 +253,7 @@
     img {
       position: absolute;
       left: 0; top: 0;
-      width: 100%;
-      height: 100%;
+      width: 100%; height: 100%;
       object-fit: cover;
       object-position: center;
       opacity: 1;
@@ -501,8 +464,6 @@
       margin-top: 53px;
       padding: 35px 70px;
       .prograssbar {
-        position: absolute;
-        left: 0; top: 0;
         width: 100%; height: 1px;
         background: #8d8d8d;
         .swiper-pagination-progressbar-fill {

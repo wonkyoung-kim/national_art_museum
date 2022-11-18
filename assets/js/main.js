@@ -394,6 +394,7 @@ const mainScript = {
     .to('.footer .newsletter-area .line1', {width: '100%', duration: 2}, 'a+=1')
     .to('.footer .newsletter-area .input-box', {opacity: 1, duration: 2}, 'a+=1')
     .to('.footer .newsletter-area .line2', {width: '100%', duration: 2}, 'a+=1.3')
+    
     gsap.from('.footer .addr-area .inner', {
       scrollTrigger: {
         trigger: '.footer .addr-area',
