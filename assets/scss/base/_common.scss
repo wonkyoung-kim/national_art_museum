@@ -4,6 +4,9 @@ body {
   color: #fff;
   letter-spacing: 2.25px;
 }
+.wrapper {
+  min-width: 1200px;
+}
 .blind {
   position: absolute;
   width: 1px; height: 1px;
