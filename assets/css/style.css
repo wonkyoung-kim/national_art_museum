@@ -352,7 +352,7 @@ header .btn-search:hover .circle {
   font-weight: bold;
   opacity: 1;
   transform: translateY(0);
-  transition-property: transform opacity;
+  transition-property: transform, opacity;
   transition-duration: 0.5s;
 }
 .footer .newsletter-area .input-box .placeholder.on span {
